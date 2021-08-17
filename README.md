@@ -10,6 +10,9 @@ You can run your application in dev mode using: `shell script ./mvnw compile qua
 
 ## Access your REST endpoint
 
+For this application to be able to run the service-b from https://github.com/devonfw-sample/devon4quarkus-cicd-testapp-service-b must be up and running and accessable for this service instance. Per default the configured base url for service-b within service-a is `http://localhost:8081`. If you want to change this because your service-b-instance is running somewhere else but locally, you can change it in the `application.properties` file.
+
+
 `curl -w "\n" http://localhost:8080/greeting/hello`
 
 or
