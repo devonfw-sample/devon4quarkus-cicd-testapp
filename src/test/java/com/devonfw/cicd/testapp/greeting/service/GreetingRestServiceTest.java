@@ -17,13 +17,13 @@ public class GreetingRestServiceTest {
   @Test
   public void testHelloEndpoint() {
 
-    given().when().get("/serviceA/hello").then().statusCode(200).body(is("Hello World!"));
+    given().when().get("/greeting/hello").then().statusCode(200).body(is("Hello World!"));
   }
 
   @Test
   public void testHelloNameEndpoint() {
 
-    given().when().get("/serviceA/hello/Florian").then().statusCode(200).body(is("Hello Florian!"));
+    given().when().get("/greeting/hello/Florian").then().statusCode(200).body(is("Hello Florian!"));
   }
 
 }
